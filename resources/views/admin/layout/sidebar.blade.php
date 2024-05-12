@@ -1,93 +1,85 @@
-<nav class="sidebar">
-    <div class="sidebar-header">
-        <a href="#" class="sidebar-brand">
-            Top<span>Dev</span>
-        </a>
-        <div class="sidebar-toggler not-active">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+        <img src="{{asset('admin_assets/img/AdminLTELogo.png')}}" alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">LARAVEL SHOP</span>
+    </a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+								with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="categories.html" class="nav-link">
+                        <i class="nav-icon fas fa-file-alt"></i>
+                        <p>Category</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="subcategory.html" class="nav-link">
+                        <i class="nav-icon fas fa-file-alt"></i>
+                        <p>Sub Category</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="brands.html" class="nav-link">
+                        <svg class="h-6 nav-icon w-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <p>Brands</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">
+                        <i class="nav-icon fas fa-tag"></i>
+                        <p>Products</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <!-- <i class="nav-icon fas fa-tag"></i> -->
+                        <i class="fas fa-truck nav-icon"></i>
+                        <p>Shipping</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="orders.html" class="nav-link">
+                        <i class="nav-icon fas fa-shopping-bag"></i>
+                        <p>Orders</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="discount.html" class="nav-link">
+                        <i class="nav-icon  fa fa-percent" aria-hidden="true"></i>
+                        <p>Discount</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="users.html" class="nav-link">
+                        <i class="nav-icon  fas fa-users"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages.html" class="nav-link">
+                        <i class="nav-icon  far fa-file-alt"></i>
+                        <p>Pages</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="sidebar-body">
-        <ul class="nav">
-            <li class="nav-item nav-category">Main</li>
-            <li class="nav-item">
-                <a href="dashboard.html" class="nav-link">
-                    <i class="fa-solid fa-gauge link-icon"></i>
-                    <span class="link-title">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false"
-                    aria-controls="emails">
-                    <i class="fa-solid fa-layer-group link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="mail"></i> -->
-                    <span class="link-title">Category</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="pages/apps/chat.html" class="nav-link">
-                    <i class="fa-solid fa-list link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="message-square"></i> -->
-                    <span class="link-title">Sub Category</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="pages/apps/calendar.html" class="nav-link">
-                    <i class="fa-brands fa-bandcamp link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="calendar"></i> -->
-                    <span class="link-title">Brands</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false"
-                    aria-controls="uiComponents">
-                    <i class="fa-brands fa-product-hunt link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="feather"></i> -->
-                    <span class="link-title">Products</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="fa-solid fa-truck-fast link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="anchor"></i> -->
-                    <span class="link-title">Shipping</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false"
-                    aria-controls="forms">
-                    <i class="fa-brands fa-first-order link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="inbox"></i> -->
-                    <span class="link-title">Orders</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#charts" role="button" aria-expanded="false"
-                    aria-controls="charts">
-                    <i class="fa-solid fa-percent link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="pie-chart"></i> -->
-                    <span class="link-title">Discount</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#tables" role="button" aria-expanded="false"
-                    aria-controls="tables">
-                    <i class="fa-solid fa-users link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="layout"></i> -->
-                    <span class="link-title">Users</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false"
-                    aria-controls="icons">
-                    <i class="fa-solid fa-pager link-icon"></i>
-                    <!-- <i class="link-icon" data-feather="smile"></i> -->
-                    <span class="link-title">Pages</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+</aside>
